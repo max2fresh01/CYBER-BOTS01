@@ -1,1 +1,21 @@
-
+{
+  "name": "cyber-bots",
+  "version": "2.0.0",
+  "description": "CYBER BOTS - Pixel-Art-Browserspiel mit Online-Co-op (Vercel WebSocket Functions + Redis)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/dev.js",
+    "dev": "node server/dev.js",
+    "test": "node test/run.js && node test/glue.js && node test/social.js && node test/voice.js",
+    "test:browser": "node test/browser.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.4.1",
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "license": "UNLICENSED"
+}
